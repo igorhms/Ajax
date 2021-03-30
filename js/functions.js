@@ -2,7 +2,7 @@ function loadCustomer(){
     let xhtpp = new XMLHttpRequest();
     let file = ".../json/clientes.json"
 
-    xhtpp.onreadystatechance() = function () {
+    xhtpp.onreadystatechange = function () {
         if((xhtpp.readyState == 4) && (xhtpp.status == 200)){
             printCustomers(xhtpp.responseText);
 

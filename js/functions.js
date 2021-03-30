@@ -1,5 +1,5 @@
 function loadCustomer(){
-    xhtpp =XMLHttpRequest();
+    let xhtpp = new XMLHttpRequest();
     let file = ".../json/clientes.json"
 
     xhtpp.onreadystatechance() = function () {
